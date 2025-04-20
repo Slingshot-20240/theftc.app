@@ -9,7 +9,7 @@
 
 	<h1>One app for <b>everything</b> FTC</h1>
 
-	<h3>September 12</h3>
+	<h3>September 1</h3>
 
 	<a
 		id="waitlist"
