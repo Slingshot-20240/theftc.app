@@ -1,13 +1,16 @@
 <head>
 	<title>The FTC App | 20240 Slingshot</title>
+	<link rel="canonical" href="https://theftc.app/" />
 </head>
 
 <main>
+	<h1>The FIRST® Tech Challenge App</h1>
+
 	<img id="logo" src="/logo.png" alt="FTC Team 20240 Slingshot Logo" />
 
 	<img id="ss" src="/ss.png" alt="DECODE™ Scorer presented by 20240 Slingshot App Home Screen" />
 
-	<h1>One app for <b>everything</b> FTC</h1>
+	<h2>One app for <b>everything</b> FTC</h2>
 
 	<h3>September 1</h3>
 
@@ -18,9 +21,9 @@
 	>
 
 	<div>
-		<a class="link" href="https://ftcscoring.app" target="_blank">DECODE™ Scorer ↗</a>
-    <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-		<a class="link" href="https://itd.ftcscoring.app" target="_blank">INTO THE DEEP℠ Scorer ↗</a>
+		<a class="link" href="/decode-scorer" target="_blank">DECODE™ Scorer ↗</a>
+		<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+		<a class="link" href="/itd-scorer" target="_blank">INTO THE DEEP℠ Scorer ↗</a>
 	</div>
 </main>
 
@@ -47,12 +50,20 @@
 
 	main {
 		width: 100vw;
-		height: 100vh;
+		min-height: 100vh;
 		padding: 2rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		overflow-y: auto;
+
+		h1 {
+			position: absolute;
+			opacity: 0;
+			top: -100%;
+			left: -100%;
+		}
 
 		#logo {
 			margin: 0 0 calc(min(12rem, 40%) / 16) 0;
@@ -63,7 +74,7 @@
 			width: min(48rem, 100%);
 		}
 
-		h1 {
+		h2 {
 			margin: calc(min(2.8rem, 8vw) / 3) 0 0.2rem 0;
 			font-size: min(2.8rem, 8vw);
 			font-weight: 300;
